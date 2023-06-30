@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatter Home</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <script src="{{url_for('static',filename='script/main.js')}}"></script>
+    <header class="header">
+        <h1 style="display: inline-block;">Chatter &nbsp; </h1>•&nbsp;Home
+        <button class="util-button" style="float: right;">user.first_name</button>
+    </header>
+    <div class="content" style="text-align: center;">
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Create New Account</h2>
+                
+                
+                    
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Start Chatting" >
+                        </div>
+                    </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
